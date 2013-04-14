@@ -55,6 +55,9 @@ When setting up a new Mac, you may want to set some sensible OS X defaults:
 ./.osx
 ```
 
+See Matthias' answer on stack exchange for information on how to get obtain these settings:
+http://apple.stackexchange.com/a/45389/25513 
+
 ### Install Homebrew formulae
 
 When setting up a new Mac, you may want to install some common Homebrew formulae (after installing Homebrew, of course):
