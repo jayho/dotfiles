@@ -23,6 +23,12 @@
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
+    # Unstage changes
+    unstage = reset HEAD --
+    # Pull in remote SVN changes
+    spull = !git-svn fetch && git-svn rebase
+    # Push changes to remote SVN
+    spush = !git-svn dcommit 
 
 [apply]
 	# Detect whitespace errors when applying a patch

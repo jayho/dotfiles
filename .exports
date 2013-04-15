@@ -6,7 +6,9 @@ export HISTSIZE=32768
 export HISTFILESIZE=$HISTSIZE
 export HISTCONTROL=ignoredups
 # Make some commands not show up in history
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+#export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
+export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:[ \t]*:[fb]g"
+# Also see: http://www.talug.org/events/20030709/cmdline_history.html
 
 # Prefer US English and use UTF-8
 export LANG="en_US"
