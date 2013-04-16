@@ -29,6 +29,8 @@
     spull = !git-svn fetch && git-svn rebase
     # Push changes to remote SVN
     spush = !git-svn dcommit 
+	# List non-cached, non-committed, normally-ignored files
+	lsi = !git ls-files --others -i --exclude-standard
 
 [apply]
 	# Detect whitespace errors when applying a patch
