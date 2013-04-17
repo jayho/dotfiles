@@ -1,6 +1,8 @@
 [alias]
-	# View the SHA, description, and history graph of the latest 20 commits
-	l = log --pretty=oneline -n 20 --graph
+	# View the SHA, description, and history graph of the latest commits
+	l = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset' --abbrev-commit --date=relative
+	# View what the configured user has changed since the last standup
+	standup = !"l() { git log --since=\"${1:-1 week ago}\" --author `git config user.email`  --pretty=oneline --abbrev-commit; }; l"
 	# View the current working tree status using the short format
 	s = status -s
 	# Show the diff between the latest commit and the current state
@@ -23,14 +25,14 @@
 	credit = "!f() { git commit --amend --author \"$1 <$2>\" -C HEAD; }; f"
 	# Interactive rebase with the given number of latest commits
 	reb = "!r() { git rebase -i HEAD~$1; }; r"
-    # Unstage changes
-    unstage = reset HEAD --
-    # Pull in remote SVN changes
-    spull = !git-svn fetch && git-svn rebase
-    # Push changes to remote SVN
-    spush = !git-svn dcommit 
+	# Unstage changes
+	unstage = reset HEAD --
+	# Pull in remote SVN changes
+	spull = !git-svn fetch && git-svn rebase
+	# Push changes to remote SVN
+	spush = !git-svn dcommit 
 	# List non-cached, non-committed, normally-ignored files
-	lsi = !git ls-files --others -i --exclude-standard
+	ignored = ls-files --others -i --exclude-standard
 
 [apply]
 	# Detect whitespace errors when applying a patch
