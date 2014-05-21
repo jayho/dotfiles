@@ -84,3 +84,6 @@
 [url "git://gist.github.com/"]
 	insteadOf = "gist:"
 
+[user]
+	name = Jens Hoffmann
+	email = jchoffmann@gmail.com
