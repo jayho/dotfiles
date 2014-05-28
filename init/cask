@@ -11,3 +11,8 @@ brew cask install intellij-idea-ce
 brew cask install firefox
 brew cask install skype
 brew cask install picasa
+brew cask install dropbox
+
+brew cask install evernote
+brew cask install google-chrome
+brew cask install google-drive
