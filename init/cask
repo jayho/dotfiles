@@ -10,3 +10,4 @@ brew cask install unetbootin
 brew cask install intellij-idea-ce
 brew cask install firefox
 brew cask install skype
+brew cask install picasa
