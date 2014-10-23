@@ -1,24 +1,24 @@
 # Utilities
-brew cask install spectacle
-brew cask install mucommander
+brew cask install android-file-transfer
 brew cask install keepassx
 brew cask install macvim
+brew cask install mucommander
+brew cask install spectacle
 brew cask install unetbootin
-brew cask install android-file-transfer
 # Development
-brew cask install zeroxed
 brew cask install intellij-idea-ce
+brew cask install zeroxed
 # Media
 brew cask install ichm
-brew cask install vlc
 brew cask install openoffice
 brew cask install picasa
 brew cask install sonos
+brew cask install vlc
 # Internet
-brew cask install firefox
-brew cask install skype
 brew cask install dropbox
 brew cask install evernote
+brew cask install firefox
 brew cask install google-chrome
 brew cask install google-drive
+brew cask install skype
 
