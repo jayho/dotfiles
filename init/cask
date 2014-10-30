@@ -1,24 +1,31 @@
+# Install native apps
+# Usage: `bundle ~/init/cask`
+
+install caskroom/cask/brew-cask
+tap caskroom/versions
+
 # Utilities
-brew cask install android-file-transfer
-brew cask install keepassx
-brew cask install macvim
-brew cask install mucommander
-brew cask install spectacle
-brew cask install unetbootin
+cask install android-file-transfer 2> /dev/null
+cask install keepassx 2> /dev/null
+cask install macvim 2> /dev/null
+cask install mucommander 2> /dev/null
+cask install spectacle 2> /dev/null
+cask install unetbootin 2> /dev/null
+cask install virtualbox 2> /dev/null
 # Development
-brew cask install intellij-idea-ce
-brew cask install zeroxed
+cask install intellij-idea-ce 2> /dev/null
+cask install zeroxed 2> /dev/null
 # Media
-brew cask install ichm
-brew cask install openoffice
-brew cask install picasa
-brew cask install sonos
-brew cask install vlc
+cask install ichm 2> /dev/null
+cask install openoffice 2> /dev/null
+cask install picasa 2> /dev/null
+cask install sonos 2> /dev/null
+cask install vlc 2> /dev/null
 # Internet
-brew cask install dropbox
-brew cask install evernote
-brew cask install firefox
-brew cask install google-chrome
-brew cask install google-drive
-brew cask install skype
+cask install dropbox 2> /dev/null
+cask install evernote 2> /dev/null
+cask install firefox 2> /dev/null
+cask install google-chrome 2> /dev/null
+cask install google-drive 2> /dev/null
+cask install skype 2> /dev/null
 
