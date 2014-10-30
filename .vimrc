@@ -33,7 +33,7 @@ filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{()}]
-set lcs=tab:▸\ ,trail:·,eol:¬,nbsp:_ " show invisible characters
+set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_ " show invisible characters
 set list                " show invisible characters
 set mouse=a             " enable mouse in all modes
 " }}}
