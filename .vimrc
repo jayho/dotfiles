@@ -15,21 +15,25 @@ syntax enable           " enable syntax processing
 " }}}
 " Section Misc {{{ 
 set nocompatible        " necessary for lots of cool vim things
+set ttyfast             " faster redraw
 " jh is escape
 "inoremap jh <esc>
 " }}}
 " Section Spaces & Tabs {{{
+set expandtab           " tabs are spaces
 set tabstop=4           " number of visual spaces per TAB
 set softtabstop=4       " number of spaces in TAB when editing
-set expandtab           " tabs are spaces
+set shiftwidth=4        " number of spaces to use for each step of (auto)indent
 set backspace=indent,eol,start " allow backspace in insert mode
+filetype indent on      " load filetype-specific indent files
+filetype plugin on      " load filetype-specific indent files
+set autoindent          " copy indent from current line when starting a new line
 " }}}
 " Section UI Layout {{{
 set number              " show line numbers
 set showcmd             " show command in bottom bar
 set title               " show the filename in the window titlebar
 set cursorline          " highlight current line
-filetype indent on      " load filetype-specific indent files
 set wildmenu            " visual autocomplete for command menu
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{()}]
