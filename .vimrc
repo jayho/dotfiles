@@ -76,6 +76,8 @@ nnoremap <leader><space> :nohlsearch<CR>
 nnoremap <leader>u :GundoToggle<CR>
 " toggle NERD tree
 nnoremap <leader>n :NERDTreeToggle<CR>
+" toggle relative line numbers
+nnoremap <leader>l :call ToggleNumber()<CR>
 " save session
 nnoremap <leader>s :mksession<CR>
 " }}}
