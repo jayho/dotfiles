@@ -35,6 +35,7 @@ set showcmd             " show command in bottom bar
 set title               " show the filename in the window titlebar
 set cursorline          " highlight current line
 set wildmenu            " visual autocomplete for command menu
+set laststatus=2        " always display status line
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{()}]
 set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_ " show invisible characters
@@ -85,6 +86,7 @@ nnoremap <leader>s :mksession<CR>
 " Section Syntastic {{{
 " }}}
 " Section Launch Config {{{
+" execute pathogen#infect()
 " }}}
 " Section AutoGroups {{{
 " }}}
