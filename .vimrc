@@ -74,6 +74,8 @@ let mapleader=","       " leader is comma
 nnoremap <leader><space> :nohlsearch<CR>
 " toggle gundo
 nnoremap <leader>u :GundoToggle<CR>
+" toggle NERD tree
+nnoremap <leader>n :NERDTreeToggle<CR>
 " save session
 nnoremap <leader>s :mksession<CR>
 " }}}
@@ -86,7 +88,7 @@ nnoremap <leader>s :mksession<CR>
 " Section Syntastic {{{
 " }}}
 " Section Launch Config {{{
-" execute pathogen#infect()
+execute pathogen#infect()
 " }}}
 " Section AutoGroups {{{
 " }}}
