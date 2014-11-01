@@ -1,13 +1,8 @@
 " Jens Hoffmann
 " based on http://dougblack.io/words/a-good-vimrc.html
 "
-" Things to install:
-" - colorschemes
-" - pathogen
-" - powerline
-" - gundo
-" - ag (silver searcher)
-" - ctrlp
+" Plugin manager: pathogen
+" Good plugins: powerline/airline, gundo, NERDTree, ag (silver searcher), ctrlp, syntastic
 "
 " Section Colors {{{
 colorscheme default     " awesome colorscheme
@@ -16,8 +11,8 @@ syntax enable           " enable syntax processing
 " Section Misc {{{ 
 set nocompatible        " necessary for lots of cool vim things
 set ttyfast             " faster redraw
-" jh is escape
-"inoremap jh <esc>
+" jk is escape
+"inoremap jk <esc>
 " }}}
 " Section Spaces & Tabs {{{
 set expandtab           " tabs are spaces
@@ -101,7 +96,7 @@ set backupskip=/tmp/*,/private/tmp/*
 set directory=~/.vim-tmp,~/.tmp,~/tmp,/var/tmp,/tmp
 set writebackup
 " }}}
-" Section CustomFunctinons {{{
+" Section CustomFunctions {{{
 " toggle between number and relativenumber
 function! ToggleNumber()
         if(&relativenumber == 1)
