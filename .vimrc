@@ -5,7 +5,7 @@
 " Good plugins: powerline/airline, gundo, NERDTree, ag (silver searcher), ctrlp, syntastic
 "
 " Section Colors {{{
-colorscheme default     " awesome colorscheme
+colorscheme badwolf     " awesome colorscheme
 syntax enable           " enable syntax processing
 " }}}
 " Section Misc {{{ 
@@ -79,7 +79,10 @@ nnoremap <leader>s :mksession<CR>
 " Section Powerline {{{
 " }}}
 " Section CtrlP {{{
-" }}}
+let g:ctrlp_match_window = 'bottom,order:ttb' " order matching files top to bottom
+let g:ctrlp_switch_buffer = 0                 " always open files in new buffers
+let g:ctrlp_working_path_mode = 0             " let us change working dir during a vim session
+" "}}}
 " Section NERDTree {{{
 " }}}
 " Section Syntastic {{{
