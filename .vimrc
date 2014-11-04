@@ -76,8 +76,10 @@ nnoremap <leader>l :call ToggleNumber()<CR>
 " save session
 nnoremap <leader>s :mksession<CR>
 " clipboard actions
+" => yank to register '*' in normal and visual mode
+" => paste from register '*' in normal mode
 vnoremap <leader>y "*y
-nnoremap <leader>y "*y
+nnoremap <leader>y "*yy
 nnoremap <leader>p "*p
 " }}}
 " Section Powerline {{{
