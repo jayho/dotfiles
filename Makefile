@@ -4,7 +4,7 @@ update:
 	@git pull origin master
 
 install: ask
-	@\rsync --exclude ".git/" --exclude ".DS_Store" --exclude "Makefile" --exclude "README.md" -avh --no-perms . ~
+	@\rsync --exclude ".DS_Store" --exclude ".git/" --exclude ".gitmodules" --exclude "Makefile" --exclude "README.md" -avh --no-perms . ~
 
 ask:
 	@read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1 REPLY; \
