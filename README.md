@@ -5,7 +5,7 @@ Shamelessly cloned from https://github.com/mathiasbynens/dotfiles and accomodate
 ## Installation
 
 ```bash
-git clone https://github.com/jayho/dotfiles.git && cd dotfiles && make install
+git clone --recursive https://github.com/jayho/dotfiles.git && cd dotfiles && make install
 ```
 
 ## Update
