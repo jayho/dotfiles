@@ -5,7 +5,7 @@ Shamelessly cloned from https://github.com/mathiasbynens/dotfiles and accomodate
 ## Installation
 
 ```bash
-git clone https://github.com/jayho/dotfiles.git && cd dotfiles && source bootstrap.sh
+git clone https://github.com/jayho/dotfiles.git && cd dotfiles && make install
 ```
 
 ## Update
@@ -13,14 +13,9 @@ git clone https://github.com/jayho/dotfiles.git && cd dotfiles && source bootstr
 To update, `cd` into your local `dotfiles` repository and then:
 
 ```bash
-source bootstrap.sh
+make
 ```
 
-Alternatively, to update while avoiding the confirmation prompt:
-
-```bash
-set -- -f; source bootstrap.sh
-```
 ### Sensible OS X defaults
 
 ```bash
