@@ -75,6 +75,10 @@ nnoremap <leader>n :NERDTreeToggle<CR>
 nnoremap <leader>l :call ToggleNumber()<CR>
 " save session
 nnoremap <leader>s :mksession<CR>
+" clipboard actions
+vnoremap <leader>y "*y
+nnoremap <leader>y "*y
+nnoremap <leader>p "*p
 " }}}
 " Section Powerline {{{
 " }}}
