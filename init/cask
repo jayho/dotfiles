@@ -7,15 +7,15 @@ tap caskroom/versions
 # Utilities
 cask install android-file-transfer 2> /dev/null
 cask install keepassx 2> /dev/null
-cask install macvim 2> /dev/null
+#cask install macvim 2> /dev/null
 cask install mucommander 2> /dev/null
 cask install spectacle 2> /dev/null
 cask install unetbootin 2> /dev/null
 cask install virtualbox 2> /dev/null
+cask install basictex 2> /dev/null
 # Development
 cask install intellij-idea-ce 2> /dev/null
 cask install zeroxed 2> /dev/null
-cask install basictex 2> /dev/null
 # Media
 cask install ichm 2> /dev/null
 cask install openoffice 2> /dev/null
