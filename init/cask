@@ -15,6 +15,7 @@ cask install virtualbox 2> /dev/null
 # Development
 cask install intellij-idea-ce 2> /dev/null
 cask install zeroxed 2> /dev/null
+cask install basictex 2> /dev/null
 # Media
 cask install ichm 2> /dev/null
 cask install openoffice 2> /dev/null
