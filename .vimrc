@@ -29,7 +29,8 @@ set number              " show line numbers
 set showcmd             " show command in bottom bar
 set title               " show the filename in the window titlebar
 set cursorline          " highlight current line
-set colorcolumn=120     " highlight column to indicate max width
+set textwidth=120       " maximum width of text (lines will be broken)
+set colorcolumn=+1      " highlight column to indicate max width
 set wildmenu            " visual autocomplete for command menu
 set laststatus=2        " always display status line
 set lazyredraw          " redraw only when we need to
