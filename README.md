@@ -1,4 +1,4 @@
-# Jens’s dotfiles
+# My personal dotfiles
 
 Shamelessly cloned from https://github.com/mathiasbynens/dotfiles and accomodated for my personal needs. See his README.md for more details.
 
