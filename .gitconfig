@@ -44,6 +44,7 @@
 	attributesfile = ~/.gitattributes
 	# Treat spaces before tabs, lines that are indented with 8 or more spaces, and all kinds of trailing whitespace as an error
 	whitespace = space-before-tab,indent-with-non-tab,trailing-space
+	editor = vim
 
 [color]
 	# Use colors in Git commands that are capable of colored output when outputting to the terminal
@@ -64,6 +65,7 @@
 [merge]
 	# Include summaries of merged commits in newly created merge commit messages
 	log = true
+	tool = kdiff3
 
 # Use `origin` as the default remote on the `master` branch in all cases
 [branch "master"]
@@ -86,4 +88,16 @@
 
 [user]
 	name = Jens Hoffmann
-	email = jchoffmann@gmail.com
+	email = jens.hoffmann@markit.com
+[commit]
+	template = ~/.gitmessage.txt
+[diff]
+	tool = kdiff3
+[difftool "kdiff3"]
+	cmd = kdiff3 $(cygpath -w \"$LOCAL\") \"$REMOTE\"
+	trustExitCode = false
+[mergetool "kdiff3"]
+	cmd = kdiff3 \"$LOCAL\" \"$REMOTE\" -o \"$MERGED\"
+	trustExitCode = false
+[difftool]
+	prompt = false
