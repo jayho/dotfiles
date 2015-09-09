@@ -1,0 +1,33 @@
+# PATH additions
+#export PATH="~/bin:$PATH"
+#export PATH="/usr/texbin:$PATH" # used for basictex install
+
+# backup additions
+backup() { 
+    : ${1:?}
+    dirs=( Desktop Documents Movies Music Pictures Development )
+    for d in "${dirs[@]}"; do 
+        echo "=== BACKING UP $d/ to $1/`basename $d` ==="
+        if rsync -avv --delete --exclude='.DS_Store' --exclude='iPhoto Library' --exclude='Photo Booth Library' --exclude='iChat Icons' --exclude='tonido.db' --exclude='.metadata' --exclude='*class' "$d/" "$1/`basename $d`"
+        then :
+        else return $?
+        fi
+    done
+}
+
+# Git credentials
+GIT_AUTHOR_NAME="Jens Hoffmann"
+GIT_COMMITTER_NAME="$GIT_AUTHOR_NAME"
+git config --global user.name "$GIT_AUTHOR_NAME"
+GIT_AUTHOR_EMAIL="jchoffmann@gmail.com"
+GIT_COMMITTER_EMAIL="$GIT_AUTHOR_EMAIL"
+git config --global user.email "$GIT_AUTHOR_EMAIL"
+
+# jEnv
+eval "$(jenv init -)"
+
+# jClarity
+#export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
+#export M2_HOME="/usr/local/Cellar/maven/3.2.1/libexec"
+#export PATH="$JAVA_HOME/bin:$PATH"
+

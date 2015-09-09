@@ -1,6 +1,3 @@
-# dotfiles .extra file for manual override
-.extra
-
 # Folder view configuration files
 .DS_Store
 Desktop.ini
