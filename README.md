@@ -11,6 +11,3 @@ make install
 cd dotfiles
 make
 ```
-## Other files are managed as Gists:
-* `.extra` settings for [home](https://gist.github.com/jayho/c5776133b6f91734bd9c)
-* `.extra` settings for work
