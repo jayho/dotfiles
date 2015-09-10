@@ -5,7 +5,7 @@
 " Good plugins: powerline/airline, gundo, NERDTree, ag (silver searcher), ctrlp, syntastic
 "
 " Section Colors {{{
-colorscheme badwolf     " awesome colorscheme
+colorscheme darkblue    " awesome colorscheme
 syntax enable           " enable syntax processing
 " }}}
 " Section Misc {{{ 
