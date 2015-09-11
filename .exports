@@ -1,31 +1,15 @@
-# Make vim the default editor
-export EDITOR="vim"
+# Navigation additions
+export DEVSRC='d:/pv2'
 
-# Larger bash history (allow 32³ entries; default is 500)
-export HISTSIZE=32768
-export HISTFILESIZE=$HISTSIZE
-export HISTCONTROL=ignoredups
-# Make some commands not show up in history
-#export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help"
-export HISTIGNORE="ls:cd:cd -:pwd:exit:date:* --help:[ \t]*:[fb]g"
-# See also: http://www.talug.org/events/20030709/cmdline_history.html
+# Java additions
+export JAVA6_64=/cygdrive/c/Program\ Files/Java/jdk1.6.0_25
+export JAVA6_32=/cygdrive/c/Program\ Files\ \(x86\)/Java/jdk1.6.0_32
+export JAVA_HOME=${JAVA6_64}
 
-# Prefer US English and use UTF-8
-export LANG="en_US"
-export LC_ALL="en_US.UTF-8"
+# Maven additions
+export MAVEN_OPTS='-Xmx1g -XX:MaxPermSize=256m'
+export M2_HOME=/cygdrive/c/ExternalSoftware/apache-maven-3.2.5
 
-# Highlight section titles in manual pages
-export LESS_TERMCAP_md="$ORANGE"
-#export LESS_TERMCAP_mb=$'\E[01;31m'
-#export LESS_TERMCAP_md=$'\E[01;31m'
-#export LESS_TERMCAP_me=$'\E[0m'
-#export LESS_TERMCAP_se=$'\E[0m'
-#export LESS_TERMCAP_so=$'\E[01;47;34m'
-#export LESS_TERMCAP_ue=$'\E[0m'
-#export LESS_TERMCAP_us=$'\E[01;32m'
-#export LESS=-r
-#export GROFF_NO_SGR=1
-# See also: http://unix.stackexchange.com/a/6357/37221
-
-# Don’t clear the screen after quitting a manual page
-export MANPAGER="less -X"
+# PATH additions
+export PATH=${JAVA_HOME}/bin:${PATH}
+export PATH=${M2_HOME}/bin:${PATH}
