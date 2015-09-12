@@ -1,5 +1,5 @@
-# Add `~/bin` to the `$PATH`
-export PATH="$HOME/bin:$PATH"
-
 # Add `/usr/local/bin` to `$PATH`
-export PATH="/usr/local/bin:$PATH"
+#export PATH="/usr/local/bin:$PATH"
+
+# Basictex install
+#export PATH="/usr/texbin:$PATH"
