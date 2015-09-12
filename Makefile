@@ -1,7 +1,7 @@
 all: update install
 
 update:
-	@git pull origin master
+	@git pull origin zsh
 
 install: ask
 	@\rsync --exclude ".DS_Store" --exclude ".git/" --exclude ".gitmodules" --exclude "Makefile" --exclude "README.md" -avh --no-perms . ~
