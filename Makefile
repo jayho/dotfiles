@@ -1,7 +1,7 @@
 all: update install
 
 update:
-	@git pull origin work
+	@git pull origin work_babun
 
 install: ask
 	@\rsync --exclude ".DS_Store" --exclude ".git/" --exclude ".gitmodules" --exclude "Makefile" --exclude "README.md" -avh --no-perms . ~
