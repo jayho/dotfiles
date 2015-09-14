@@ -87,6 +87,7 @@ declare -a sources
 
 sources+=".exports"
 sources+=".aliases"
+sources+=".functions"
 
 for file in ${sources[@]}; do
 	[[ -e $file ]] && source $file

@@ -1,0 +1,22 @@
+# Maven 
+mvnall() {
+    if [[ $@ =~ "[cC]" ]]; then
+        cg; if mvn clean install; then :; else dev; return $?; fi;
+    fi
+    if [[ $@ =~ "[qQ]" ]]; then
+        qg; if mvn clean install; then :; else dev; return $?; fi;
+    fi
+    if [[ $@ =~ "[vV]" ]]; then
+        vg; if mvn clean install; then :; else dev; return $?; fi;
+    fi
+    if [[ $@ =~ "[mM]" ]]; then
+        mg; if mvn clean install; then :; else dev; return $?; fi;
+    fi
+    if [[ $@ =~ "[sS]" ]]; then
+        wg; if mvn -pl code/db -am -P plsql clean package; then :; else dev; return $?; fi;
+    fi
+    if [[ $@ =~ "[wW]" ]]; then
+        wg; if mvn -pl code/valuations -am clean install; then :; else dev; return $?; fi;
+    fi
+    dev
+}
