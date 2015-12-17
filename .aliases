@@ -8,3 +8,4 @@ alias cg='dev;cd core-api'
 
 # Maven aliases
 alias mvn='mvn-color'
+alias mvnp='mvn -T 2C'
