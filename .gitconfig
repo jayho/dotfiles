@@ -8,7 +8,7 @@
 [credential]
 	helper = cache --timeout=3600
 [merge]
-	tool = vimdiff
+	tool = p4merge
 [mergetool]
 	keeptemporaries = false
 	keepbackups = false
@@ -28,3 +28,7 @@
 [user]
 	name = Jens Hoffmann
 	email = jens.hoffmann@markit.com
+[mergetool "p4merge"]
+	cmd = /cygdrive/c/ExternalSoftware/Perforce/p4merge.exe $(cygpath -w $BASE) $(cygpath -w $LOCAL) $(cygpath -w $REMOTE) $(cygpath -w $MERGED)
+[difftool "p4merge"]
+	cmd = /cygdrive/c/ExternalSoftware/Perforce/p4merge.exe $(cygpath -w $LOCAL) $(cygpath -w $REMOTE)
