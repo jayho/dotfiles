@@ -1,8 +1,9 @@
 # Navigation additions
-export DEVSRC='d:/pv2'
+export DEVSRC='d:/pv'
 
 # Java additions
 export JAVA6_64=/cygdrive/c/Program\ Files/Java/jdk1.6.0_25
+export JAVA8_64=/cygdrive/c/Program\ Files/Java/jdk1.8.0_66
 export JAVA6_32=/cygdrive/c/Program\ Files\ \(x86\)/Java/jdk1.6.0_32
 export JAVA_HOME=${JAVA6_64}
 
