@@ -9,7 +9,7 @@ export JAVA8_32=/cygdrive/c/Program\ Files\ \(x86\)/Java/jdk1.8.0_72
 export JAVA_HOME=${JAVA8_64}
 
 # Maven additions
-export MAVEN_OPTS='-Xmx1g -XX:MaxPermSize=256m'
+export MAVEN_OPTS='-Xmx1g'
 export MAVEN_OPTS="${MAVEN_OPTS} -javaagent:d:/var/spring-instrument-3.2.12.RELEASE.jar"
 export M2_HOME=/cygdrive/c/ExternalSoftware/apache-maven-3.2.5
 
