@@ -18,5 +18,8 @@ mvnall() {
     if [[ $@ =~ "[wW]" ]]; then
         wg; if mvnp -pl code/valuations -am clean install; then :; else dev; return $?; fi;
     fi
+    if [[ $@ =~ "[iI]" ]]; then
+        wgi; if mvnp clean install; then :; else dev; return $?; fi;
+    fi
     dev
 }
