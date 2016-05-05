@@ -1,6 +1,7 @@
 # Directory aliases
 alias dev='cd ${DEVSRC}'
 alias wg='dev;cd warehouse'
+alias wgc='dev;cd warehouse/code'
 alias wgi='dev;cd warehouse/app/ironbridge/valuation'
 alias wga='dev;cd warehouse/app/valuations-addin'
 alias vg='dev;cd valuations'

@@ -13,13 +13,10 @@ mvnall() {
         mg; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[sS]" ]]; then
-        wg; if mvnp -pl code/db -am -P plsql clean package; then :; else dev; return $?; fi;
+        wgc; if mvnp -pl db -am -P plsql clean compile; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[wW]" ]]; then
-        wg; if mvnp -pl code/valuations -am clean install; then :; else dev; return $?; fi;
-    fi
-    if [[ $@ =~ "[iI]" ]]; then
-        wgi; if mvnp clean install; then :; else dev; return $?; fi;
+        wgc; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     dev
 }
