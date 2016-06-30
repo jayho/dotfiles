@@ -1,22 +1,22 @@
 # Maven 
 mvnall() {
     if [[ $@ =~ "[cC]" ]]; then
-        cg; if mvnp clean install; then :; else dev; return $?; fi;
+        dev; cd core-api; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[qQ]" ]]; then
-        qg; if mvnp clean install; then :; else dev; return $?; fi;
+        dev; cd qag; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[vV]" ]]; then
-        vg; if mvnp clean install; then :; else dev; return $?; fi;
+        dev; cd valuations; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[mM]" ]]; then
-        mg; if mvnp clean install; then :; else dev; return $?; fi;
+        dev; cd marketdata; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[sS]" ]]; then
-        wgc; if mvnp -pl db -am -P plsql clean compile; then :; else dev; return $?; fi;
+        dev; cd warehouse/code/db; if mvnp -P plsql clean compile; then :; else dev; return $?; fi;
     fi
     if [[ $@ =~ "[wW]" ]]; then
-        wgc; if mvnp clean install; then :; else dev; return $?; fi;
+        dev; cd warehouse/code; if mvnp clean install; then :; else dev; return $?; fi;
     fi
     dev
 }
