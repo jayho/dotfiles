@@ -1,7 +1,9 @@
 # Directory aliases
 alias dev='cd ${DEVSRC}'
+alias vgi='dev;cd valuations/base/ironbridge-api'
 alias wgc='dev;cd warehouse/code'
-alias wgi='dev;cd warehouse/app/ironbridge/valuation'
+alias wga='dev;cd warehouse/app'
+alias wgi='dev;cd warehouse/app/ironbridge'
 
 # Maven aliases
 alias mvn='mvn-color'
