@@ -1,5 +1,5 @@
 # Navigation additions
-export DEVSRC='d:/pv'
+export DEVSRC='d:/pv-parent'
 
 # Java additions
 export JAVA6_64=/cygdrive/c/Program\ Files/Java/jdk1.6.0_25
