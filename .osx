@@ -113,6 +113,24 @@ end tell
 EOF
 }
 
+# Set timer - plays audio and shows pop-up when the time is up
+notifyme () {
+    local MINS=`bc <<< ($1)/60`
+    local SECS=`bc <<< ($1)%60`
+    local MSG=${2:-"Oh bugger, time is up!"}
+    echo "Sleeping $MINS minutes $SECS seconds"
+    for ((i = 0; i < $MINS; i++)); do 
+        sleep 60
+        echo -n "."
+    done
+    for ((i = 0; i < $SECS; i++)); do 
+        sleep 1
+        echo -n "+"
+    done
+    say -v Daniel $MSG
+    terminal-notifier -title 'Reminder' -message $MSG
+}
+
 # Manually remove a downloaded app or file from the quarantine
 function unquarantine() {
 	for attribute in com.apple.metadata:kMDItemDownloadedDate com.apple.metadata:kMDItemWhereFroms com.apple.quarantine; do

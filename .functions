@@ -9,7 +9,3 @@ backup() {
         fi
     done
 }
-
-notifyme () {
-    sleep `bc <<< $1` && terminal-notifier -title 'Reminder' -message ${2:-'Meep!'}
-}
