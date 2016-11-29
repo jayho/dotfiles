@@ -127,6 +127,7 @@ notifyme () {
         sleep 1
         echo -n "+"
     done
+    echo
     say -v Daniel $MSG
     terminal-notifier -title 'Reminder' -message $MSG
 }
