@@ -3,12 +3,13 @@
 [core]
 	trustctime = false
 	editor = vim
+	filemode = false
 [color]
 	ui = true
 [credential]
-	helper = cache --timeout=3600
+	helper = cache --timeout=28800
 [merge]
-	tool = p4merge
+	tool = idea
 [mergetool]
 	keeptemporaries = false
 	keepbackups = false
@@ -26,9 +27,7 @@
 	dc = diff --cached
 	lg = log --graph --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %Cblue<%an>%Creset' --abbrev-commit --date=relative --all
 [user]
-	name = Jens Hoffmann
-	email = jens.hoffmann@markit.com
-[mergetool "p4merge"]
-	cmd = /cygdrive/c/ExternalSoftware/Perforce/p4merge.exe $(cygpath -w $BASE) $(cygpath -w $LOCAL) $(cygpath -w $REMOTE) $(cygpath -w $MERGED)
-[difftool "p4merge"]
-	cmd = /cygdrive/c/ExternalSoftware/Perforce/p4merge.exe $(cygpath -w $LOCAL) $(cygpath -w $REMOTE)
+	name = Hoffmann, Jens
+	email = je.hoffmann@rwe.com
+[mergetool "idea"]
+	cmd = '/cygdrive/c/Tools/JetBrains/IntelliJ IDEA Community Edition 2016.3.2/bin/idea64.exe' merge $(cygpath -w $LOCAL) $(cygpath -w $REMOTE) $(cygpath -w $BASE) $(cygpath -w $MERGED)
