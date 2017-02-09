@@ -1,3 +1,5 @@
+DEFAULT_USER=jhoffmann
+
 # jClarity
 #export JAVA_HOME=`/usr/libexec/java_home -v 1.7`
 #export M2_HOME="/usr/local/Cellar/maven/3.2.1/libexec"

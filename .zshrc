@@ -5,7 +5,7 @@ export ZSH=/Users/jhoffmann/.oh-my-zsh
 # Look in ~/.oh-my-zsh/themes/
 # Optionally, if you set this to "random", it'll load a random theme each
 # time that oh-my-zsh is loaded.
-ZSH_THEME="bira" # robbyrussell # bira # gnzh
+ZSH_THEME="agnoster" # robbyrussell # bira # gnzh
 
 # Uncomment the following line to use case-sensitive completion.
 # CASE_SENSITIVE="true"
@@ -49,7 +49,8 @@ ZSH_THEME="bira" # robbyrussell # bira # gnzh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git colored-man colorize python brew osx zsh-syntax-highlighting zsh-completions)
+plugins=(git python brew zsh-syntax-highlighting zsh-autosuggestions)
+#plugins=(git colored-man colorize python brew osx zsh-syntax-highlighting zsh-completions)
 
 # User configuration
 
