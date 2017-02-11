@@ -49,8 +49,7 @@ ZSH_THEME="agnoster" # robbyrussell # bira # gnzh
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git python brew zsh-syntax-highlighting zsh-autosuggestions)
-#plugins=(git colored-man colorize python brew osx zsh-syntax-highlighting zsh-completions)
+plugins=(brew colored-man-pages git osx python rsync zsh-syntax-highlighting zsh-autosuggestions)
 
 # User configuration
 
