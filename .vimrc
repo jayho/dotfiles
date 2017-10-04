@@ -43,7 +43,7 @@ set wildmenu            " visual autocomplete for command menu
 set laststatus=2        " always display status line
 set lazyredraw          " redraw only when we need to
 set showmatch           " highlight matching [{()}]
-set lcs=tab:Â»\ ,trail:Â·,eol:Â¬,nbsp:_ " show invisible characters
+set lcs=tab:»\ ,trail:·,eol:¬,nbsp:_ " show invisible characters
 set list                " show invisible characters
 set mouse=a             " enable mouse in all modes
 " }}}
