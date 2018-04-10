@@ -1,10 +1,10 @@
 all: update install
 
 update:
-	@git pull origin work_babun
+	@git pull origin rwe_babun
 
 install: ask
-	@\rsync --exclude ".DS_Store" --exclude ".git/" --exclude ".gitmodules" --exclude "Makefile" --exclude "README.md" -avh --no-perms . ~
+	@\rsync --exclude ".git/" --exclude ".gitmodules" --exclude "_vimrc" --exclude "Makefile" --exclude "README.md" -avh --no-perms . ~
 
 ask:
 	@read -p "This may overwrite existing files in your home directory. Are you sure? (y/n) " -n 1 REPLY; \
