@@ -1,2 +1,2 @@
-alias dev='cd /cygdrive/c/Devsrc'
+alias dev='cd /cygdrive/d/Development'
 alias gradle='./gradlew'
