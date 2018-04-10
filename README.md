@@ -6,6 +6,7 @@ git clone --recursive https://github.com/jayho/dotfiles.git
 cd dotfiles
 make install
 ```
+Mintty settings require font [DejaVuSansMono](https://github.com/powerline/fonts/tree/master/DejaVuSansMono)
 ## Update
 ```bash
 cd dotfiles
