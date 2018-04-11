@@ -3,9 +3,9 @@ export JAVA_OPTS="-Xms128m -Xmx256m"
 export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M"
 
 # Modify these lines to set your locale
-xport LANG="en_US.UTF-8"
-xport LC_CTYPE="en_US.UTF-8"
-xport LC_ALL="en_US.UTF-8"
+export LANG="en_US.UTF-8"
+export LC_CTYPE="en_US.UTF-8"
+export LC_ALL="en_US.UTF-8"
 
 # Uncomment these lines to the set your machine's default locale (and comment out the UTF-8 ones)
 # export LANG=$(locale -uU)
