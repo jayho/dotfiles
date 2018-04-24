@@ -30,4 +30,4 @@
 	name = Hoffmann, Jens
 	email = je.hoffmann@rwe.com
 [mergetool "idea"]
-	cmd = '/cygdrive/c/Tools/JetBrains/IntelliJ IDEA 2017.3.5/bin/idea64.exe' merge $(cygpath -w $LOCAL) $(cygpath -w $REMOTE) $(cygpath -w $BASE) $(cygpath -w $MERGED)
+	cmd = '/cygdrive/c/Tools/JetBrains/IntelliJ IDEA 2018.1.1/bin/idea64.exe' merge $(cygpath -w $LOCAL) $(cygpath -w $REMOTE) $(cygpath -w $BASE) $(cygpath -w $MERGED)
