@@ -1,9 +1,0 @@
-# Zsh completions
-autoload -U compinit && compinit
-
-# Git
-#git config --global user.name "$GIT_AUTHOR_NAME"
-#git config --global user.email "$GIT_AUTHOR_EMAIL"
-
-# jEnv
-eval "$(jenv init -)"

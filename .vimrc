@@ -1,3 +1,5 @@
+scriptencoding utf-8
+set encoding=utf-8
 " vim:foldmethod=marker:foldlevel=0
 "
 " Jens Hoffmann
