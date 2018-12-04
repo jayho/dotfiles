@@ -122,3 +122,5 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # Empty the Trash on all mounted volumes and the main HDD
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
+
+alias update='sudo softwareupdate --verbose --install --recommended; brew update; brew upgrade; brew cleanup; brew doctor; upgrade_oh_my_zsh'
