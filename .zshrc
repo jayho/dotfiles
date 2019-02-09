@@ -106,6 +106,8 @@ export DEFAULT_USER=UI342828
 export JAVA_OPTS="-Xms128m -Xmx256m"
 export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M"
 
+alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
+
 alias dev='cd /cygdrive/d/Development'
 alias gradle='./gradlew'
 
