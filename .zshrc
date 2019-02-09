@@ -103,6 +103,9 @@ prompt pure
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 
+# Dotfile management
+alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
+
 # Backup directories to HDD
 backup() {
     : ${1:?}
@@ -123,4 +126,5 @@ alias cleanup="find . -type f -name '*.DS_Store' -ls -delete"
 # Also, clear Apple’s System Logs to improve shell startup speed
 alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo rm -rfv /private/var/log/asl/*.asl"
 
+# Update macOS, homebrew, and oh-my-zsh
 alias update='sudo softwareupdate --verbose --install --recommended; brew update; brew upgrade; brew cleanup; brew doctor; upgrade_oh_my_zsh'
