@@ -2,6 +2,7 @@
 
 ## Installation
 ```
+cd ~
 git clone --bare https://github.com/jchoffmann/dotfiles.git .dot
 source .zshrc
 dot checkout
