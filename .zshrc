@@ -111,6 +111,7 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 alias dev='cd /cygdrive/d/Development'
 alias gradle='./gradlew'
 alias pr='cygstart http://stash.rwe.com/users/ui342828/repos/$(pwd | xargs basename)/pull-requests\?create'
+alias x='cygstart .'
 
 source ~/.proxy 
 
