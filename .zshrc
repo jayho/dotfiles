@@ -128,3 +128,7 @@ alias emptytrash="sudo rm -rfv /Volumes/*/.Trashes; sudo rm -rfv ~/.Trash; sudo 
 
 # Update macOS, homebrew, and oh-my-zsh
 alias update='sudo softwareupdate --verbose --install --recommended; brew update; brew upgrade; brew cleanup; brew doctor; upgrade_oh_my_zsh'
+
+# jEnv
+export PATH="$HOME/.jenv/bin:$PATH"
+eval "$(jenv init -)"
