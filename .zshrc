@@ -110,6 +110,8 @@ alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 
 alias dev='cd /cygdrive/d/Development'
 alias gradle='./gradlew'
+alias gradle8='./gradlew -Dorg.gradle.java.home="C:\Program Files\AdoptOpenJDK\jdk-8.0.212.04-hotspot"'
+alias gradle11='./gradlew -Dorg.gradle.java.home="C:\Program Files\AdoptOpenJDK\jdk-11.0.3.7-hotspot"'
 alias pr='cygstart http://stash.rwe.com/users/ui342828/repos/$(pwd | xargs basename)/pull-requests\?create'
 alias x='cygstart .'
 
