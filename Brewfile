@@ -39,4 +39,5 @@ cask "libreoffice"
 cask "slack"
 cask "spectacle"
 cask "virtualbox"
+cask "visual-studio-code"
 mas "Amphetamine", id: 937984704
