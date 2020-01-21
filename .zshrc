@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-  export ZSH="/home/UI342828/.oh-my-zsh"
+export ZSH="/home/ui342828/.oh-my-zsh"
 
 # Set name of the theme to load --- if set to "random", it will
 # load a random theme each time oh-my-zsh is loaded, in which case,
@@ -117,4 +117,3 @@ alias x='cygstart .'
 
 source ~/.proxy 
 
-source ./zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
