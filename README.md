@@ -3,7 +3,7 @@
 ## Installation
 ```
 cd ~
-git clone --bare --single-branch --branch rwe https://github.com/jchoffmann/dotfiles.git .dot
+git clone --bare --single-branch --branch rwe_energy https://github.com/jchoffmann/dotfiles.git .dot
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 dot checkout
 dot config --local status.showUntrackedFiles no
