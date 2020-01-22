@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     //fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    fontFamily: 'Fira Code, Hack, Droid Sans Mono for Powerline, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'DejaVu Sans Mono for Powerline, Fira Code, Hack, Droid Sans Mono for Powerline, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -98,14 +98,14 @@ module.exports = {
     //
     // PowerShell on Windows
     // - Example: `C:\\WINDOWS\\System32\\WindowsPowerShell\\v1.0\\powershell.exe`
-    shell: 'C:\\Tools\\cygwin64\\bin\\zsh.exe',
+    shell: 'C:\\Windows\\System32\\bash.exe',
 
     // for setting shell arguments (i.e. for using interactive shellArgs: `['-i']`)
     // by default `['--login']` will be used
     shellArgs: ['--login'],
 
     // for environment variables
-    env: {TERM: 'cygwin'},
+    env: {},
 
     // set to `false` for no bell
     bell: 'SOUND',
@@ -132,7 +132,8 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-snazzy'],
+  //plugins: ['hyper-snazzy', 'hyperpower'],
+  plugins: [],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
