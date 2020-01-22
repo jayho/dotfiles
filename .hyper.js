@@ -13,7 +13,7 @@ module.exports = {
 
     // font family with optional fallbacks
     //fontFamily: 'Menlo, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
-    fontFamily: 'Fira Code, Hack, Droid Sans Mono for Powerline, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
+    fontFamily: 'DejaVu Sans Mono for Powerline, Fira Code, Hack, Droid Sans Mono for Powerline, "DejaVu Sans Mono", Consolas, "Lucida Console", monospace',
 
     // default font weight: 'normal' or 'bold'
     fontWeight: 'normal',
@@ -132,7 +132,7 @@ module.exports = {
   //   `hyperpower`
   //   `@company/project`
   //   `project#1.0.1`
-  plugins: ['hyper-snazzy'],
+  plugins: ['hyper-snazzy', 'hyperpower'],
 
   // in development, you can create a directory under
   // `~/.hyper_plugins/local/` and include it here
