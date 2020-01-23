@@ -101,19 +101,20 @@ source $ZSH/oh-my-zsh.sh
 export LANG="en_US.UTF-8"
 export LC_CTYPE="en_US.UTF-8"
 export LC_ALL="en_US.UTF-8"
-export DEFAULT_USER=UI342828
+export DEFAULT_USER=ui342828
 
 export JAVA_OPTS="-Xms128m -Xmx256m"
 export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -Xss2M"
 
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 
-alias dev='cd /cygdrive/d/Development'
+alias dev='cd /mnt/c/Development'
 alias gradle='./gradlew'
 alias gradle8='./gradlew -Dorg.gradle.java.home="C:\Program Files\AdoptOpenJDK\jdk-8.0.212.04-hotspot"'
 alias gradle11='./gradlew -Dorg.gradle.java.home="C:\Program Files\AdoptOpenJDK\jdk-11.0.3.7-hotspot"'
-alias pr='cygstart http://stash.rwe.com/users/ui342828/repos/$(pwd | xargs basename)/pull-requests\?create'
-alias x='cygstart .'
+alias pr='explorer.exe http://stash.rwe.com/users/ui342828/repos/$(pwd | xargs basename)/pull-requests\?create'
+alias x='explorer.exe .'
 
 source ~/.proxy 
 
+screenfetch

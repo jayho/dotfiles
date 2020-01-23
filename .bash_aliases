@@ -1,0 +1,2 @@
+cd
+bash -c zsh
