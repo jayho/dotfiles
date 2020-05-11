@@ -14,7 +14,7 @@
 " Good plugins  : gundo, NERDTree, ag (silver searcher), ctrlp, syntastic
 "
 " Section Launch Config {{{
-execute pathogen#infect()
+"execute pathogen#infect()
 set modelines=1
 " }}}
 " Section Colors {{{
