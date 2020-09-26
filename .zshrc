@@ -109,7 +109,8 @@ export SBT_OPTS="-Xmx4G -XX:+UseConcMarkSweepGC -XX:+CMSClassUnloadingEnabled -X
 alias dot='/usr/bin/git --git-dir=$HOME/.dot/ --work-tree=$HOME'
 
 alias dev='cd /mnt/c/Development'
-alias tools='cd /mnt/c/Tools'
+alias tls='cd /mnt/c/Tools'
+alias supp='cd /mnt/c/Support'
 alias gradle='./gradlew'
 alias gradle8='./gradlew -Dorg.gradle.java.home="/usr/lib/jvm/java-8-openjdk-amd64"'
 alias gradle11='./gradlew -Dorg.gradle.java.home="/usr/lib/jvm/java-11-openjdk-amd64"'
