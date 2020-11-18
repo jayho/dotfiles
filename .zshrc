@@ -114,7 +114,7 @@ alias supp='cd /mnt/c/Support'
 alias gradle='./gradlew'
 alias gradle8='./gradlew -Dorg.gradle.java.home="/usr/lib/jvm/java-8-openjdk-amd64"'
 alias gradle11='./gradlew -Dorg.gradle.java.home="/usr/lib/jvm/java-11-openjdk-amd64"'
-alias pr='explorer.exe http://stash.rwe.com/users/ui342828/repos/$(git remote get-url origin | xargs -I % basename % .git)/pull-requests\?create'
+alias pr='explorer.exe https://bitbucket.rwe.com/users/ui342828/repos/$(git remote get-url origin | xargs -I % basename % .git)/pull-requests\?create'
 alias x='explorer.exe .'
 
 source ~/.proxy 

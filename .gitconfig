@@ -30,3 +30,5 @@
 	email = je.hoffmann@rwe.com
 [mergetool "idea"]
 	cmd = '/mnt/c/Tools/IntelliJ IDEA 2020.1/bin/idea64.exe' merge $LOCAL $REMOTE $BASE $MERGED
+[http]
+	sslVerify = false
